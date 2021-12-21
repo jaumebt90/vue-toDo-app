@@ -92,9 +92,7 @@ export default {
     capitalizeFirstChar(str) {
       return str.charAt(0).toUpperCase() + str.slice(1);
     },
-    /**
-     * Change status of task by index
-     */
+    //Change status of task by index
     changeStatus(index) {
       let newIndex = this.statuses.indexOf(this.tasks[index].status);
       if (++newIndex > 2) newIndex = 0;
