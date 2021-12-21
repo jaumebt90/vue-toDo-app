@@ -11,9 +11,7 @@
         placeholder="New task"
         class="w-100 form-control"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">
-        AÑADIR
-      </button>
+      <button class="btn btn-warning rounded-0" @click="submitTask">ADD</button>
     </div>
 
     <!-- Task table -->
@@ -22,8 +20,8 @@
         <tr>
           <th scope="col">Task</th>
           <th scope="col" style="width: 120px">Status</th>
-          <th scope="col" class="text-center">#</th>
-          <th scope="col" class="text-center">#</th>
+          <th scope="col" class="text-center">Delete</th>
+          <th scope="col" class="text-center">Edit</th>
         </tr>
       </thead>
       <tbody>
