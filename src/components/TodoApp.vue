@@ -88,9 +88,7 @@ export default {
     };
   },
   methods: {
-    /**
-     * Capitalize first character
-     */
+    //Capitalize first character
     capitalizeFirstChar(str) {
       return str.charAt(0).toUpperCase() + str.slice(1);
     },
