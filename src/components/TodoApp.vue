@@ -14,7 +14,7 @@
       <button class="btn rounded-0" @click="submitTask">ADD</button>
     </div>
 
-    <!-- Task table -->
+    <!-- Tasks table -->
     <table class="table table-bordered mt-5">
       <thead>
         <tr>
