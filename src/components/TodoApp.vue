@@ -129,7 +129,7 @@ export default {
         /* We need to add new task */
         this.tasks.push({
           name: this.task,
-          status: "todo",
+          status: "to-do",
         });
       }
       this.task = "";
