@@ -110,7 +110,7 @@ export default {
     //Add / Update task
     submitTask() {
       if (this.task.length === 0) return;
-      /* We need to update the task */
+      //Update the task
       if (this.editedTask != null) {
         this.tasks[this.editedTask].name = this.task;
         this.editedTask = null;
