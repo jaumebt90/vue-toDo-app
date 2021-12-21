@@ -20,8 +20,8 @@
         <tr>
           <th scope="col">Tasks</th>
           <th scope="col" style="width: 120px">Status</th>
-          <th scope="col" class="text-center">Delete</th>
           <th scope="col" class="text-center">Edit</th>
+          <th scope="col" class="text-center">Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -45,13 +45,13 @@
             </span>
           </td>
           <td class="text-center">
-            <div @click="deleteTask(index)">
-              <span class="fa fa-trash pointer"></span>
+            <div @click="editTask(index)">
+              <p class="fa fa-pen pointer"></p>
             </div>
           </td>
           <td class="text-center">
-            <div @click="editTask(index)">
-              <p class="fa fa-pen pointer"></p>
+            <div @click="deleteTask(index)">
+              <span class="fa fa-trash pointer"></span>
             </div>
           </td>
         </tr>
@@ -98,14 +98,14 @@ export default {
       if (++newIndex > 2) newIndex = 0;
       this.tasks[index].status = this.statuses[newIndex];
     },
-    //Deletes task by index
-    deleteTask(index) {
-      this.tasks.splice(index, 1);
-    },
     //Edit task
     editTask(index) {
       this.task = this.tasks[index].name;
       this.editedTask = index;
+    },
+    //Deletes task by index
+    deleteTask(index) {
+      this.tasks.splice(index, 1);
     },
     //Add / Update task
     submitTask() {
