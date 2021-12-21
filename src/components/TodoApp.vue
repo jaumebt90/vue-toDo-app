@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: "",
+  name: "ToDo",
   props: {
     msg: String,
   },
