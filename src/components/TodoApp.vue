@@ -115,7 +115,7 @@ export default {
         this.tasks[this.editedTask].name = this.task;
         this.editedTask = null;
       } else {
-        /* We need to add new task */
+        //Add new task
         this.tasks.push({
           name: this.task,
           status: "to-do",
