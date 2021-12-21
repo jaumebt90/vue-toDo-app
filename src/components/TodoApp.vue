@@ -71,7 +71,6 @@ export default {
       task: "",
       editedTask: null,
       statuses: ["to-do", "in-progress", "finished"],
-      /* Status could be: 'to-do' / 'in-progress' / 'finished' */
       tasks: [
         {
           name: "Walking the dog",
