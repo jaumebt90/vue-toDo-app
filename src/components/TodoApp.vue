@@ -11,14 +11,14 @@
         placeholder="New task"
         class="w-100 form-control"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">ADD</button>
+      <button class="btn rounded-0" @click="submitTask">ADD</button>
     </div>
 
     <!-- Task table -->
     <table class="table table-bordered mt-5">
       <thead>
         <tr>
-          <th scope="col">Task</th>
+          <th scope="col">Tasks</th>
           <th scope="col" style="width: 120px">Status</th>
           <th scope="col" class="text-center">Delete</th>
           <th scope="col" class="text-center">Edit</th>
@@ -142,7 +142,10 @@ export default {
 .pointer {
   cursor: pointer;
 }
-
+.btn {
+  background-color: #31475e;
+  color: white;
+}
 .line-through {
   text-decoration: line-through;
 }
