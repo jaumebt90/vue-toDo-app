@@ -1,6 +1,6 @@
 <template>
   <div class="container" style="max-width: 600px">
-    <!-- Heading -->
+    //Heading
     <h2 class="text-center mt-5">Vue ToDo App</h2>
 
     <!-- Input -->
