@@ -98,9 +98,7 @@ export default {
       if (++newIndex > 2) newIndex = 0;
       this.tasks[index].status = this.statuses[newIndex];
     },
-    /**
-     * Deletes task by index
-     */
+    //Deletes task by index
     deleteTask(index) {
       this.tasks.splice(index, 1);
     },
