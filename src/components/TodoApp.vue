@@ -107,9 +107,7 @@ export default {
       this.task = this.tasks[index].name;
       this.editedTask = index;
     },
-    /**
-     * Add / Update task
-     */
+    //Add / Update task
     submitTask() {
       if (this.task.length === 0) return;
       /* We need to update the task */
