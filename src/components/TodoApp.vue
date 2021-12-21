@@ -102,9 +102,7 @@ export default {
     deleteTask(index) {
       this.tasks.splice(index, 1);
     },
-    /**
-     * Edit task
-     */
+    //Edit task
     editTask(index) {
       this.task = this.tasks[index].name;
       this.editedTask = index;
